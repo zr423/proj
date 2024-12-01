@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.assignment2"
+    namespace = "com.example.iems5722_project"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.assignment2"
+        applicationId = "com.example.iems5722_project"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -52,7 +52,7 @@ android {
 dependencies {
 
     implementation(libs.androidx.core.ktx)
-    implementation("com.squareup.okhttp3:okhttp:4.10.0") // 请根据需要替换为合适的版本
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
@@ -60,9 +60,9 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.okhttp)
+
     implementation(libs.androidx.espresso.core)
+    implementation(libs.firebase.vertexai)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
